@@ -58,6 +58,7 @@
     [[FIRMessaging messaging] tokenWithCompletion:^(NSString *token, NSError *error) {
         if (error != nil) {
             NSLog(@"Error getting FCM registration token: %@", error);
+	    //[self didFailToRegisterForRemoteNotificationsWithError:error];
         } else {
             NSLog(@"FCM registration token: %@", token);
 
